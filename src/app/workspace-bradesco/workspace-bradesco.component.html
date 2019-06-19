@@ -1,0 +1,52 @@
+<div class="container d-flex flex-column">
+  <div class="header mb-4">
+    <h3>{{ title }}</h3>
+    <p><span (click)="teste()" class="badge badge-secondary mr-1">03</span>{{ subtitle }}</p>
+  </div>
+  <div class="workspace-details d-flex p-0 col-xs-12 col-md-12">
+    <div class="info col-md-4 p-0">
+      <h5 class="mb-4">Regras</h5>
+      <button class="btn btn-secondary col-md-10 mb-2" routerLink="/new-rule">Nova regra</button>
+      <div class="rule card mb-2 col-md-10 p-3">
+        <h6>Regra Alfa</h6>
+        <div class="rule-control d-flex justify-content-between">
+          <div class="controls">
+            <fa class="mr-2" name="copy" size="1x"></fa>   
+              <fa class="mr-2" name="trash" size="1x"></fa>
+            </div>
+            <div class="loading">
+                <fa name="spinner" size="1x" animation="spin"></fa>
+            </div>
+        </div>
+      </div>
+      <div class="rule card mb-2 col-md-10 p-3">
+        <h6>Regra Beta</h6>
+        <div class="rule-control d-flex justify-content-between">
+            <div class="controls">
+              <fa class="mr-2" name="copy" size="1x"></fa>   
+              <fa class="mr-2" name="trash" size="1x"></fa>
+            </div>
+            <div class="loading">
+            </div>
+        </div>
+      </div>
+      <div (click)="teste()" class="rule card mb-2 col-md-10 p-3">
+        <h6>Regra Gama</h6>
+        <div class="rule-control d-flex justify-content-between">
+            <div class="controls">
+              <fa class="mr-2" name="copy" size="1x"></fa>   
+              <fa class="mr-2" name="trash" size="1x"></fa>
+            </div>
+            <div class="loading">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="chart col-md-8 p-0">
+      <h5 class="mb-4">Exibição gráfica</h5>
+      <div class="card col-xs-12">
+
+      </div>
+    </div>
+  </div>
+</div>
